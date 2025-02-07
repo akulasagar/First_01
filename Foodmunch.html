@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="foodmunch.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-White">
+        <div class="container">
+            <a class="navbar-brand  " href="#">
+                <img class="food-munnch" src="data:image/jpeg;base64,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">
+            </a>
+            <button class="navbar-toggler navbutton " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto ">
+                    <a class="nav-link active" href="#">
+                        Home <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link  " href="#" id=id1>why choose us?</a>
+                    <a class="nav-link " href="#" id=id2>Explore our Menu</a>
+                    <a class="nav-link " href="#" id=id3>Delivery & Payment</a>
+                    <a class="nav-link " href="#" id=id4>Follow Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-bg-container d-flex flex-column justify-content-center">
+        <div class="text-center">
+            <h1 class="heading mb-3">Get Delicious Food Anytime</h1>
+            <p class="para mb-4">Eat Smart & Healthy</p>
+            <button class="btn-1">View Menu</button>
+            <button class="btn-2">Order Now</button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="why-section section-1 mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Why Choose Us?</h1>
+                    <p>We use both original recipes and classic versions of famous food items.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card-1 p-3 mt-3">
+                        <img class="mt-1 " src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png">
+                        <h1 class=" h1 mt-3">Food Service</h1>
+                        <p class=" p mt-3">Experience fine dining at the comfort of your home.All our orders are carefully packed and arranged to give you the nothing less than perfect</p>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card-1 p-3 mt-3">
+                        <img class="mt-1 " src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png">
+                        <h1 class=" h1 mt-3">Fresh Food</h1>
+                        <p class=" p mt-3"> The Fresh Food group provides fresh-cut fruits and vegetables
+                            directly picked from our partner farms and farm houses so that
+                            you always get them tree to plate. </p>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card-1 p-3 mt-3">
+                        <img class="mt-1 " src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png">
+                        <h1 class=" h1 mt-3">Food Service</h1>
+                        <p class=" p mt-3">Food Coupons & Offers upto
+                            <span class="offers">50% OFF</span>
+                            and Exclusive Promo Codes on All Online Food Orders.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
